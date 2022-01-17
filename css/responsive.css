@@ -1,0 +1,56 @@
+@media (max-width:950px) {
+    .banner-left h1{
+         font-size: 35px;
+    }
+    .card{
+        margin-left: 30%;  
+    }
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .contact-right form{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:800px) {
+    .nav-toogle-icon{
+        display: block;
+    }
+    #nav-toogle:checked ~ .navigation{
+        transform: translateX(0);
+    }
+    .navigation{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px 0;
+        transform: translateX(120px);
+        transition: 0.3s linear;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }  
+    .banner-right img{
+        width: 50%;
+    } 
+    .feature, .about, .gallery, .contact{
+        grid-template-columns: 1fr;   
+    }
+    .card{
+        margin-left: 35%;  
+    }
+    .about-right h1{
+        font-size: 35px;
+    }
+    .photo{
+        text-align: center;
+    }
+    .photo img{
+        max-width: 350px;
+    }
+}

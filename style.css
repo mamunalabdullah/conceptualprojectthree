@@ -31,6 +31,12 @@ nav{
     align-items: center;
     height: 80px;
 }
+#nav-toogle{
+    display: none;
+}
+.nav-toogle-icon{
+    display: none;
+}
 .navigation{
     display: flex;
 }
@@ -50,6 +56,7 @@ nav{
 }
 .banner{
     height: calc(100vh - 80px);
+    min-height: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -102,7 +109,6 @@ nav{
 
 /* feature area start here */
 
-#feature{}
 .section-title{
     text-align: center;
 }
@@ -118,11 +124,14 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     justify-content: center;
+    background-image: url('./img/featurebg.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
 }
 .card{
     width: 300px;
-    padding: 30px;
-    margin: 0 auto;
+    padding: 35px;
+    margin-left: 30%;
     box-shadow: 0 30px 35px rgba(0, 0, 0, 0.2);
 }
 .card-icon{
@@ -145,6 +154,29 @@ nav{
     text-decoration: none;
     text-transform: capitalize;
     color: #FF008F;
+}
+
+/* about area start here */
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.about-left img{
+    width: 100%;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about-right h1{
+    font-size: 45px;
+}
+.about-right p{
+    margin: 10px 0;
 }
 
 /* gallery area start here  */
