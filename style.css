@@ -99,3 +99,106 @@ nav{
 .banner-right img{
     width: 100%;
 }
+
+/* feature area start here */
+
+#feature{}
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    font-size: 40px;
+    border-bottom: 2px solid #FF008F;
+    display: inline-block;
+    margin: 50px 0;
+    text-transform: uppercase;
+}
+.feature{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.2);
+}
+.card-icon{
+    color: #fff;
+    font-size: 35px;
+    background-color: #FF008F;
+    padding: 15px;
+    border-radius: 50%;
+}
+.card h3{
+    color: #FF008F;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.card p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.card a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FF008F;
+}
+
+/* gallery area start here  */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.photo img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #FF008F;
+}
+
+/* contact area start here */
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.contact-left img{
+    width: 100%;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #FF008F;
+}
+input[type= button]{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* footer area start here */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 20px 0;
+}
